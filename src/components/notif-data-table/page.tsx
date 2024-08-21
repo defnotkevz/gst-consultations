@@ -57,7 +57,7 @@ export default async function DemoPage() {
   const data = await getData();
 
   return (
-    <div className="container px-0 py-10">
+    <div className="px-0 py-10">
       <DataTable columns={columns} data={data} />
     </div>
   );
