@@ -14,7 +14,7 @@ const InfoForm: FC<InfoFormProps> = ({}) => {
     <div className="w-full text-black gap-x-32 flex my-20">
       <div className="w-1/2 flex flex-col gap-y-3">
         <h3 className={`text-3xl text-[#296AD5] ${quattro.className}`}>
-          Any questions? Let's have a conversation!
+          Any questions? Let&apos;s have a conversation!
         </h3>
         <p className="text-xl">You can also reach us at:</p>
         <div className="text-xl">

@@ -33,4 +33,7 @@ const DropdownButton: FC<DropdownButtonProps> = React.forwardRef<
   );
 });
 
+// Setting the displayName property
+DropdownButton.displayName = "DropdownButton";
+
 export default DropdownButton;

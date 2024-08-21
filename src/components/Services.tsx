@@ -43,6 +43,7 @@ const Services: FC<ServicesProps> = ({}) => {
             title={service.title}
             desc={service.desc}
             icon={service.icon}
+            key={service.title}
           />
         ))}
       </div>

@@ -18,7 +18,7 @@ const Header: FC<HeaderProps> = ({}) => {
         <div className="gap-y-4 flex flex-col -translate-y-20">
           <div className={`text-4xl font-bold ${quattro.className} text-black`}>
             <h1>Facing a GST Notice?</h1>
-            <h1>We're here to help!</h1>
+            <h1>We&apos;re here to help!</h1>
           </div>
           <h3>
             Expert consultation and guidance for all your GST-related concerns.
