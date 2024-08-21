@@ -11,10 +11,13 @@ interface NavbarProps {}
 
 const Navbar: FC<NavbarProps> = ({}) => {
   return (
-    <nav className=" w-full flex py-6 text-black justify-between">
-      <h1 className={`text-[32px] text-[#296AD5] ${quattro.className}`}>
+    <nav className=" w-full flex py-6 text-black justify-between z-10">
+      <Link
+        href="/"
+        className={`text-[32px] text-[#296AD5] ${quattro.className}`}
+      >
         GST Consultations.
-      </h1>
+      </Link>
       <ul className="flex items-center gap-x-8 list-none">
         <li>
           <Link
