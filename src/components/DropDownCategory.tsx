@@ -46,20 +46,20 @@ export function DropdownMenuCheckboxCategory() {
           checked={showStatusBar}
           onCheckedChange={setShowStatusBar}
         >
-          Status Bar
+          IGST
         </DropdownMenuCheckboxItem>
         <DropdownMenuCheckboxItem
           checked={showActivityBar}
           onCheckedChange={setShowActivityBar}
           disabled
         >
-          Activity Bar
+          CGST
         </DropdownMenuCheckboxItem>
         <DropdownMenuCheckboxItem
           checked={showPanel}
           onCheckedChange={setShowPanel}
         >
-          Panel
+          Tax
         </DropdownMenuCheckboxItem>
       </DropdownMenuContent>
     </DropdownMenu>

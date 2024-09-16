@@ -15,7 +15,7 @@ export default function Home() {
       <Header />
       <Services />
       <NotificationsAndCirculars />
-      <GSTForms />
+      {/* <GSTForms /> */}
       <ActsAndRules />
       <InfoForm />
       <Footer />

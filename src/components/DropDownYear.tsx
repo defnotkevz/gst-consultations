@@ -46,20 +46,20 @@ export function DropdownMenuCheckboxYear() {
           checked={showStatusBar}
           onCheckedChange={setShowStatusBar}
         >
-          Status Bar
+          2019
         </DropdownMenuCheckboxItem>
         <DropdownMenuCheckboxItem
           checked={showActivityBar}
           onCheckedChange={setShowActivityBar}
           disabled
         >
-          Activity Bar
+          2020
         </DropdownMenuCheckboxItem>
         <DropdownMenuCheckboxItem
           checked={showPanel}
           onCheckedChange={setShowPanel}
         >
-          Panel
+          2021
         </DropdownMenuCheckboxItem>
       </DropdownMenuContent>
     </DropdownMenu>

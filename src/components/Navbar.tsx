@@ -31,12 +31,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
       </Link>
       <ul className="flex items-center gap-x-8 list-none">
         <li>
-          <button
-            className="hover:text-[#296AD5] ease-in-out duration-300"
-            onClick={() => {
-              scrollToSection("services");
-            }}
-          >
+          <button className="hover:text-[#296AD5] ease-in-out duration-300">
             Home
           </button>
         </li>
