@@ -11,7 +11,7 @@ interface InfoFormProps {}
 
 const InfoForm: FC<InfoFormProps> = ({}) => {
   return (
-    <div className="w-full text-black gap-x-32 flex my-20">
+    <div id="contact" className="w-full text-black gap-x-32 flex my-20">
       <div className="w-1/2 flex flex-col gap-y-3">
         <h3 className={`text-3xl text-[#296AD5] ${quattro.className}`}>
           Any questions? Let&apos;s have a conversation!

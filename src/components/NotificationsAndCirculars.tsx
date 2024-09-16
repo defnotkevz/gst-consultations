@@ -14,7 +14,10 @@ interface NotificationsAndCircularsProps {}
 
 const NotificationsAndCirculars: FC<NotificationsAndCircularsProps> = ({}) => {
   return (
-    <div className="w-full text-black my-20 flex flex-col gap-y-10">
+    <div
+      id="notifications"
+      className="w-full text-black my-20 flex flex-col gap-y-10"
+    >
       <div className="text-center flex flex-col gap-y-2">
         <h3 className={`text-[32px] text-[#296AD5] ${quattro.className}`}>
           Notifications and Circulars

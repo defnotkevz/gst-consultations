@@ -33,7 +33,10 @@ const Services: FC<ServicesProps> = ({}) => {
     },
   ];
   return (
-    <div className="w-full mb-20 gap-y-10 flex flex-col items-center text-black justify-center ">
+    <div
+      id="services"
+      className="w-full mb-20 gap-y-10 flex flex-col items-center text-black justify-center "
+    >
       <h2 className={`text-3xl text-[#296AD5] ${quattro.className}`}>
         Our Services
       </h2>

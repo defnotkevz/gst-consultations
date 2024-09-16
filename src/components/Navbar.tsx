@@ -1,6 +1,10 @@
+"use client";
 import Link from "next/link";
 import { FC } from "react";
 import { Quattrocento } from "next/font/google";
+import { useRouter } from "next/router";
+import useSmoothScroll from "@/hooks/useSmoothScroll";
+import { Button } from "./ui/button";
 
 const quattro = Quattrocento({
   weight: ["700"],
@@ -10,6 +14,13 @@ const quattro = Quattrocento({
 interface NavbarProps {}
 
 const Navbar: FC<NavbarProps> = ({}) => {
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <nav className=" w-full flex py-6 text-black justify-between z-10">
       <Link
@@ -20,36 +31,54 @@ const Navbar: FC<NavbarProps> = ({}) => {
       </Link>
       <ul className="flex items-center gap-x-8 list-none">
         <li>
-          <Link
+          <button
             className="hover:text-[#296AD5] ease-in-out duration-300"
-            href="/"
+            onClick={() => {
+              scrollToSection("services");
+            }}
           >
             Home
-          </Link>
+          </button>
         </li>
         <li>
-          <Link
+          <button
             className="hover:text-[#296AD5] ease-in-out duration-300"
-            href="/"
+            onClick={() => {
+              scrollToSection("services");
+            }}
           >
             Services
-          </Link>
+          </button>
         </li>
         <li>
-          <Link
+          <button
             className="hover:text-[#296AD5] ease-in-out duration-300"
-            href="/"
+            onClick={() => {
+              scrollToSection("notifications");
+            }}
           >
-            Resources
-          </Link>
+            Notifications
+          </button>
         </li>
         <li>
-          <Link
+          <button
             className="hover:text-[#296AD5] ease-in-out duration-300"
-            href="/"
+            onClick={() => {
+              scrollToSection("acts");
+            }}
           >
-            About Us
-          </Link>
+            Acts and Rules
+          </button>
+        </li>
+        <li>
+          <button
+            className="hover:text-[#296AD5] ease-in-out duration-300"
+            onClick={() => {
+              scrollToSection("contact");
+            }}
+          >
+            Contact Us
+          </button>
         </li>
       </ul>
     </nav>

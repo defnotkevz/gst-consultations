@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import Services from "@/components/Services";
 import NotificationsAndCirculars from "@/components/NotificationsAndCirculars";
 import GSTForms from "@/components/GSTForms";
+import Alert from "@/components/alert";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <ActsAndRules />
       <InfoForm />
       <Footer />
+      <Alert />
     </main>
   );
 }

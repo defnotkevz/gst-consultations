@@ -12,7 +12,7 @@ interface ActsAndRulesProps {}
 
 const ActsAndRules: FC<ActsAndRulesProps> = ({}) => {
   return (
-    <div className="w-full text-black my-20 flex flex-col gap-y-10">
+    <div id="acts" className="w-full text-black my-20 flex flex-col gap-y-10">
       <div className="text-center flex flex-col gap-y-2">
         <h3 className={`text-3xl ${quattro.className} text-[#296AD5]`}>
           GST Acts and Rules
