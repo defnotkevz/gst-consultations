@@ -32,7 +32,7 @@ async function fetchNotificationCategory() {
       }
     );
 
-    return response.data.map((item) => item.notificationCategory);
+    return response.data.map((item: any) => item.notificationCategory);
   } catch (error) {
     console.error("Error fetching category data:", error);
   }
@@ -64,7 +64,7 @@ async function fetchCircularCategory() {
       }
     );
 
-    return response.data.map((item) => item.circularCategory);
+    return response.data.map((item: any) => item.circularCategory);
   } catch (error) {
     console.error("Error fetching circular category data:", error);
   }
@@ -96,7 +96,7 @@ async function fetchOrderCategory() {
       }
     );
 
-    return response.data.map((item) => item.orderCategory);
+    return response.data.map((item: any) => item.orderCategory);
   } catch (error) {
     console.error("Error fetching order category:", error);
   }
@@ -137,7 +137,7 @@ async function fetchNotificationByYearAndCategory(
       }
     );
 
-    const notifications = response.data.map((item) => ({
+    const notifications = response.data.map((item: any) => ({
       notificationNo: item.notificationNo,
       notificationName: item.notificationName,
       notificationCategory: item.notificationCategory,
@@ -155,7 +155,7 @@ async function fetchNotificationByYearAndCategory(
   }
 }
 
-async function fetchCircularByYearAndCategory(year, category) {
+async function fetchCircularByYearAndCategory(year: number, category: string) {
   try {
     const response = await axios.get(
       "https://taxinformation.cbic.gov.in/api/cbic-circular-msts/fetchCircularByYearCategory",
@@ -188,7 +188,7 @@ async function fetchCircularByYearAndCategory(year, category) {
       }
     );
 
-    const circulars = response.data.map((item) => ({
+    const circulars = response.data.map((item: any) => ({
       circularNo: item.circularNo,
       circularName: item.circularName,
       circularCategory: item.circularCategory,
@@ -206,7 +206,7 @@ async function fetchCircularByYearAndCategory(year, category) {
   }
 }
 
-async function fetchInstructionsByYear(year) {
+async function fetchInstructionsByYear(year: number) {
   try {
     const response = await axios.get(
       "https://taxinformation.cbic.gov.in/api/cbic-instruction-msts/fetch-instructions-year-category",
@@ -238,7 +238,7 @@ async function fetchInstructionsByYear(year) {
       }
     );
 
-    const instructions = response.data.map((item) => ({
+    const instructions = response.data.map((item: any) => ({
       instructionNo: item.instructionNo,
       instructionName: item.instructionName,
       instructionDt: item.instructionDt,
@@ -251,7 +251,7 @@ async function fetchInstructionsByYear(year) {
   }
 }
 
-async function fetchOrdersByYearAndCategory(year, category) {
+async function fetchOrdersByYearAndCategory(year: number, category: string) {
   try {
     const response = await axios.get(
       "https://taxinformation.cbic.gov.in/api/cbic-order-msts/fetch-orders-year-category",
@@ -284,7 +284,7 @@ async function fetchOrdersByYearAndCategory(year, category) {
       }
     );
 
-    const orders = response.data.map((item) => ({
+    const orders = response.data.map((item: any) => ({
       orderNo: item.orderNo,
       orderName: item.orderName,
       orderDt: item.orderDt,
